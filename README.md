@@ -7,7 +7,7 @@ successfully complete these steps.
 Brief. 
 You will:  
 1. Download data from a public API to a dabase of your choice.
-2. Create your own API to read the data from your database.
+2. [OPTIONAL] Create your own API to read the data from your database.
 3. Create a SQL report.
 4. Automate your pipeline in the cloud.
 
