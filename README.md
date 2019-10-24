@@ -33,9 +33,10 @@ previous files to either a MongoDB or a PostgreSQL database.
 Inside the folder build an API to consume the data you just load into the db. Choose the framework, 
 or programming language you want there is no restriction. The API calls should have a persistence in a db.
 5. In the `working_folder` create a directory call `querys` and create a text file called `query.txt` with the
-query code to get a report of how accurate is `wind_speed` prediction with time.
-  * Taking day X as a reference, which is the deviation from `wind_speed(X)` compared
- with previous predictions of the same day X.
+query code to get a report of:
+  * What is the warmest city/region.
+  * What are the two drier city/region.
+  * What is the hottest day for each month of 2019 for each city/region
 6. Following the Serverless approach, put this pipeline to automatically
 run on a daily basis.
   * You can use Azure, Heroku, AWS Free Tier or Google Cloud.
