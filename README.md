@@ -1,8 +1,16 @@
 # Data Engineer Applicant Exercise
-To be considered for a Data Engineer position at **CoverWallet**, you must
+To be considered for a Data Engineer position at **Overactive**, you must
 successfully complete these steps.
 
 ## What is the exercise about?
+
+Brief.
+You will:
+1. Download data from a public API to a dabase of your choice.
+2. Create your own API to read the data from your database.
+3. Create a sql report.
+4. Automate your pipeline in the cloud.
+
 
 1. First of all, fork this repository to your GitHub account and clone your own repo to your laptop.
   * If you are not familiar with GitHub, please check this
@@ -24,16 +32,15 @@ previous CSV files to either a MongoDB or a PostgreSQL database.
   a free MongoDB as a Service.
   * If you prefer a PostgreSQL database, you can use [ElephantSQL](https://www.elephantsql.com/plans.html)
   to start a free PostgreSQL server.
-  * If you do not want to use any of this cloud provider you can start a Docker Container in your local host
-  and insert the data there.
+  * If you do not want to use any of these cloud providers you can use a SQLite database.
 4. Once you load the data into the DB you choose, create a directory inside the working folder and name it `app`.
 Inside the folder build an API to consume the data you just load into the db. Choose the framework, 
-or programming language you want there is no restriction. The API should have a persistence in a db.
-5. [OPTIONAL] In the `working_folder` create a directory call `querys` and create a text file called `query.txt` with the
+or programming language you want there is no restriction. The API calls should have a persistence in a db.
+5. In the `working_folder` create a directory call `querys` and create a text file called `query.txt` with the
 query code to get a report of how accurate is `wind_speed` prediction with time.
   * Taking day X as a reference, which is the deviation from `wind_speed(X)` compared
  with previous predictions of the same day X.
-6. [OPTIONAL] Following the Serverless approach, put this pipeline to automatically
+6. Following the Serverless approach, put this pipeline to automatically
 run on a daily basis.
   * You can use Heroku, AWS Free Tier or Google Cloud.
   * You can use the Serverless Framework and just make the yaml config for the deploy.
@@ -48,28 +55,4 @@ run on a daily basis.
   * You can follow a Serverless Approach and use the Serverless Framework.
   * You can use other architecture to deploy.
 
-## How to submit your exercise?
-The submitting process consist on _encrypting your files with our public
-[GPG](https://gnupg.org/) key_ and creating a Pull Request towards our repo.
-In order to do it, please follow the following steps:
-
-1. In order to import and use our public key, you need to install GPG.
-   * Linux: `sudo apt-get install gnupg2`
-   * Mac: `brew install GPG`
-2. To import our public key to your key ring, use the following command (Linux/Mac)
-from the repository folder For other OS, please refer to the [documentation](https://www.gnupg.org/documentation/).
- ```
- make import
- ```
-3. To encrypt your files and prepare the encrypted deliverable use the following
-command. It will create a new GPG file in `publish_folder` with the content of
-`working_folder` directory.
-```
- make encrypt
-```
-4. Commit and Push your code to your fork.
-5. Send a pull request to our repository, we will review your exercise and get
-back to you. If your GitHub profile does not include your name, please include
-your name in the pull request.
-
-** If you find any issues during the exercise, please send an email to [jobs@coverwallet.com](mailto:jobs@coverwallet.com)
+** If you find any issues during the exercise, please send an email to [jobs@overactive.com](mailto:jobs@overactive.com)
