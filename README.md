@@ -34,7 +34,7 @@ previous CSV files to either a MongoDB or a PostgreSQL database.
   * If you prefer a PostgreSQL database, you can use [ElephantSQL](https://www.elephantsql.com/plans.html)
   to start a free PostgreSQL server.
   * If you do not want to use any of these cloud providers you can use a SQLite database.
-4. Once you load the data into the DB you choose, create a directory inside the working folder and name it `app`.
+4. [OPTIONAL] Once you load the data into the DB you choose, create a directory inside the working folder and name it `app`.
 Inside the folder build an API to consume the data you just load into the db. Choose the framework, 
 or programming language you want there is no restriction. The API calls should have a persistence in a db.
 5. In the `working_folder` create a directory call `querys` and create a text file called `query.txt` with the
@@ -48,12 +48,8 @@ run on a daily basis.
   * You can create a Dockerfile with the enviroment and just write in a txt how you will set up a cron job.
   * Add another document in the `working_folder` explaining how you did it and
   some evidences.
-7. [OPTIONAL] Try yo load the CSV files donwload from the api using an event processing platform. You can choose the 
+7. [OPTIONAL] Try yo load the CSV files downloaded from the api using an event processing platform. You can choose the 
    event platform you want Kafka, RabbitMQ, Celery... etc. There is not need to create the full architecture code, but
    otherwise create a file called streaming_events.txt explaining us how will you build this architecture.
-8. [OPTIONAL] Create the enviroment to deploy your API in to a production enviroment.
-  * You can use a Docker Compose with the App.
-  * You can follow a Serverless Approach and use the Serverless Framework.
-  * You can use other architecture to deploy.
 
 ** If you find any issues during the exercise, please send an email to [jobs@overactive.com](mailto:jobs@overactive.com)
