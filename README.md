@@ -4,13 +4,14 @@ successfully complete these steps.
 
 ## What is the exercise about?
 
-Brief.
-You will:
+Brief. 
+You will:  
 1. Download data from a public API to a dabase of your choice.
 2. Create your own API to read the data from your database.
-3. Create a sql report.
+3. Create a SQL report.
 4. Automate your pipeline in the cloud.
 
+## Detailed Tasks ##
 
 1. First of all, fork this repository to your GitHub account and clone your own repo to your laptop.
   * If you are not familiar with GitHub, please check this
