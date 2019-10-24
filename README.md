@@ -17,18 +17,13 @@ You will:
   * If you are not familiar with GitHub, please check this
   [how to fork a repo](https://help.github.com/articles/fork-a-repo/) link.
 2. To initialize the workspace, please create a folder named `working_folder`
-or execute the following command. **IMPORTANT: All exercise deliverables should
-be in this folder before submitting the application.**
-```
-make init
-```
-3. Once in your **initilized** repository, in the `working_folder` directory and using the
+3. Once in your repository, in the `working_folder` directory and using the
 programming language/tool of your preference, create a script that collects the
 `consolidated_weather` from the 3 different cities/regions of your election from
  [this](https://www.metaweather.com/api/) public API, and save it to a local file.
 3. Again in your repository, in the `working_folder` directory and using the
 programming language/tool of your preference, create a second script that uploads
-previous CSV files to either a MongoDB or a PostgreSQL database.
+previous files to either a MongoDB or a PostgreSQL database.
   * You can use [mLab](https://mlab.com/plans/pricing/#plan-type=sandbox) to start
   a free MongoDB as a Service.
   * If you prefer a PostgreSQL database, you can use [ElephantSQL](https://www.elephantsql.com/plans.html)
@@ -48,7 +43,7 @@ run on a daily basis.
   * You can create a Dockerfile with the enviroment and just write in a txt how you will set up a cron job.
   * Add another document in the `working_folder` explaining how you did it and
   some evidences.
-7. [OPTIONAL] Try yo load the CSV files downloaded from the api using an event processing platform. You can choose the 
+7. [OPTIONAL] Try yo load the files downloaded from the api using an event processing platform. You can choose the 
    event platform you want Kafka, RabbitMQ, Celery... etc. There is not need to create the full architecture code, but
    otherwise create a file called streaming_events.txt explaining us how will you build this architecture.
 
