@@ -39,11 +39,11 @@ query code to get a report of:
   * What is the hottest day for each month of 2019 for each city/region
 6. Following the Serverless approach, put this pipeline to automatically
 run on a daily basis.
-  * You can automate this in any way you want
-   * You can create a server instance and run a crontab on it.
-   * You can use Azure, Heroku, AWS Free Tier or Google Cloud.
-   * You can use the Serverless Framework and just make the yaml config for the deploy.
-   * You can create a Dockerfile with the enviroment and just write in a txt how you will set up a cron job.
+  * You can automate this in any way you want:
+     * You can create a server instance and run a crontab on it.
+     * You can use Azure, Heroku, AWS Free Tier or Google Cloud.
+     * You can use the Serverless Framework and just make the yaml config for the deploy.
+     * You can create a Dockerfile with the enviroment and just write in a txt how you will set up a cron job.
   * Add another document in the `working_folder` explaining how you did it and
   some evidences.
 7. [OPTIONAL] Try yo load the files downloaded from the api using an event processing platform. You can choose the 
