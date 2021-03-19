@@ -50,4 +50,4 @@ run on a daily basis.
    event platform you want Kafka, RabbitMQ, Celery... etc. There is not need to create the full architecture code, but
    otherwise create a file called streaming_events.txt explaining us how will you build this architecture.
 
-** If you find any issues during the exercise, please send an email to [jobs@overactive.com](mailto:jobs@overactive.com)
+** If you find any issues during the exercise, please send an email to []
