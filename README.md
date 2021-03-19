@@ -1,5 +1,5 @@
 # Data Engineer Applicant Exercise
-To be considered for a Data Engineer position at **Overactive**, you must
+To be considered for a Data Engineer position at **Company Name**, you must
 successfully complete these steps.
 
 ## What is the exercise about?
