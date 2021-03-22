@@ -1,0 +1,57 @@
+/*Preparación de la tabla  */
+
+ALTER TABLE buenos_aires
+ADD COLUMN 'city' varchar(20);
+
+UPDATE buenos_aires
+SET 'city' = 'Buenos Aires';
+
+SELECT * FROM buenos_aires;
+
+ALTER TABLE copenague
+ADD COLUMN 'city' varchar(20);
+
+UPDATE copenague
+SET 'city' = 'Copenague';
+
+SELECT * FROM copenague;
+
+ALTER TABLE londres
+ADD COLUMN 'city' varchar(20);
+
+UPDATE londres
+SET 'city' = 'Londres';
+
+SELECT * FROM londres;
+
+/* Primer query  */
+
+WITH all_cities AS (
+SELECT * FROM buenos_aires
+UNION ALL
+SELECT * FROM londres
+UNION ALL
+SELECT * FROM copenague
+)
+SELECT city AS 'Ciudad más cálida',
+ROUND (AVG(max_temp),2) AS 'Promedio máx temp.'
+FROM all_cities
+GROUP BY 1
+ORDER BY 2 DESC
+LIMIT 1;
+
+/* Segundo query  */
+
+WITH all_cities AS (
+SELECT * FROM buenos_aires
+UNION ALL
+SELECT * FROM londres
+UNION ALL
+SELECT * FROM copenague
+)
+SELECT city AS 'Ciudades más secas',
+ROUND (AVG(humidity),2) AS 'Humedad'
+FROM all_cities
+GROUP BY 1
+ORDER BY 2 ASC
+LIMIT 2;
